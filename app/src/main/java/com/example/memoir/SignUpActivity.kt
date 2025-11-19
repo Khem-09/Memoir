@@ -22,6 +22,17 @@ class SignUpActivity : AppCompatActivity() {
         val editTextPassword = findViewById<EditText>(R.id.editTextPassword)
         val buttonSignUp = findViewById<Button>(R.id.buttonSignUp)
 
+
+        val textViewGoToLogin = findViewById<android.widget.TextView>(R.id.textViewGoToLogin)
+
+        textViewGoToLogin.setOnClickListener {
+
+            val intent = android.content.Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+
+            finish()
+        }
+
         buttonSignUp.setOnClickListener {
             val username = editTextUsername.text.toString().trim()
             val email = editTextEmail.text.toString().trim()

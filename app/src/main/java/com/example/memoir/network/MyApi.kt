@@ -5,6 +5,7 @@ import retrofit2.Call
 import retrofit2.http.Field
 import retrofit2.http.FormUrlEncoded
 import retrofit2.http.POST
+import com.example.memoir.models.LoginResponse
 
 interface MyApi {
 
@@ -15,5 +16,12 @@ interface MyApi {
         @Field("password") password: String,
         @Field("username") username: String
     ): Call<DefaultResponse>
+
+    @FormUrlEncoded
+    @POST("login.php")
+    fun loginUser(
+        @Field("email") email: String,
+        @Field("password") password: String
+    ): Call<LoginResponse>
 
 }
