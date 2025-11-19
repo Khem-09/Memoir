@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <style name="Theme.Memoir" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="Theme.Memoir" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/memoir_slate</item>
+        <item name="colorPrimaryDark">@color/memoir_slate</item>
+        <item name="colorAccent">@color/memoir_blue</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
 </resources>

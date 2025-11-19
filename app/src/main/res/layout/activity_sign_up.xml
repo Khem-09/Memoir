@@ -4,54 +4,88 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:padding="24dp"
-    android:background="#F5F5F5">
+    android:padding="32dp"
+    android:background="@color/memoir_cream">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Create Account"
-        android:textSize="28sp"
+        android:text="Memoir"
+        android:fontFamily="serif"
+        android:textSize="48sp"
         android:textStyle="bold"
-        android:layout_marginBottom="32dp"
-        android:textColor="#333333"/>
+        android:textColor="@color/memoir_slate"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save your moments forever."
+        android:textSize="16sp"
+        android:textColor="@color/memoir_olive"
+        android:alpha="0.7"
+        android:layout_marginBottom="48dp"/>
 
     <EditText
         android:id="@+id/editTextUsername"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="55dp"
         android:hint="Username"
-        android:background="@android:drawable/edit_text"
-        android:padding="16dp"
-        android:layout_marginBottom="12dp"/>
+        android:textColorHint="#909090"
+        android:textColor="@color/memoir_dark"
+        android:background="@drawable/bg_input_field"
+        android:elevation="4dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:layout_marginBottom="16dp"/>
 
     <EditText
         android:id="@+id/editTextEmail"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="55dp"
         android:hint="Email Address"
         android:inputType="textEmailAddress"
-        android:background="@android:drawable/edit_text"
-        android:padding="16dp"
-        android:layout_marginBottom="12dp"/>
+        android:textColorHint="#909090"
+        android:textColor="@color/memoir_dark"
+        android:background="@drawable/bg_input_field"
+        android:elevation="4dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:layout_marginBottom="16dp"/>
 
     <EditText
         android:id="@+id/editTextPassword"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="55dp"
         android:hint="Password"
         android:inputType="textPassword"
-        android:background="@android:drawable/edit_text"
-        android:padding="16dp"
-        android:layout_marginBottom="24dp"/>
+        android:textColorHint="#909090"
+        android:textColor="@color/memoir_dark"
+        android:background="@drawable/bg_input_field"
+        android:elevation="4dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:layout_marginBottom="32dp"/>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonSignUp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:text="Sign Up"
-        android:backgroundTint="#6200EE"
-        android:textColor="#FFFFFF"
-        android:padding="16dp"/>
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_button_primary"
+        android:elevation="6dp"
+        android:stateListAnimator="@null"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account? Log In"
+        android:textColor="@color/memoir_slate"
+        android:layout_marginTop="24dp"
+        android:textStyle="bold"/>
 
 </LinearLayout>
